@@ -2577,7 +2577,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "백그라운드 서비스가 시작될 때 까지 %lld초 동안 대기중"
+            "value" : "백그라운드 서비스가 시작될 때 까지 %lld초 대기중"
           }
         }
       }
