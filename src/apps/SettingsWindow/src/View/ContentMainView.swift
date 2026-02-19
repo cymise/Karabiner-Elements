@@ -19,7 +19,7 @@ enum SidebarItem: String, CaseIterable, Identifiable, Hashable {
 
   var id: Self { self }
 
-  var title: String {
+  var title: LocalizedStringKey {
     switch self {
     case .simpleModifications: return "Simple Modifications"
     case .functionKeys: return "Function Keys"
@@ -71,13 +71,14 @@ struct ContentMainView: View {
   private let padding = 6.0
 
   struct SidebarSection {
-    let title: String
+    //let title: String
+    let title: LocalizedStringKey
     let items: [SidebarItem]
   }
 
   let sections: [SidebarSection] = [
     SidebarSection(
-      title: "Modifications",
+      title: "str_sidebarTitleModifications",//"Modifications",
       items: [
         .simpleModifications,
         .functionKeys,
@@ -86,7 +87,7 @@ struct ContentMainView: View {
       ]
     ),
     SidebarSection(
-      title: "Configurations",
+      title: "str_sidebarTitleConfigurations",//"Configurations",
       items: [
         .devices,
         .virtualKeyboard,
@@ -95,7 +96,7 @@ struct ContentMainView: View {
       ]
     ),
     SidebarSection(
-      title: "Maintenance",
+      title: "str_sidebarTitleMaintenance",//"Maintenance",
       items: [
         .update,
         .misc,
@@ -105,7 +106,7 @@ struct ContentMainView: View {
       ]
     ),
     SidebarSection(
-      title: "Diagnostic",
+      title: "str_sidebarTitleDiagnostic",//"Diagnostic",
       items: [
         .log,
         .systemExtensions,

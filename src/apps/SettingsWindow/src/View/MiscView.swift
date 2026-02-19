@@ -14,9 +14,10 @@ struct MiscView: View {
             .switchToggleStyle()
 
             Label(
-              "This setting is hardware-specific. "
-                + "When you import Karabiner-Elements settings to another Mac, "
-                + "the enabled state of the Multitouch Extension is not carried over.",
+              "str_multiTouchExtensionTooltip",
+              //"This setting is hardware-specific. "
+                //+ "When you import Karabiner-Elements settings to another Mac, "
+                //+ "the enabled state of the Multitouch Extension is not carried over.",
               systemImage: InfoBorder.icon
             )
             .modifier(InfoBorder())
@@ -42,8 +43,9 @@ struct MiscView: View {
               })
 
             Label(
-              "You can back up your settings or migrate them to another machine by copying karabiner.json. "
-                + "There are also backups under the automatic_backups folder, so you can restore a previous state by overwriting karabiner.json with one of those backups.",
+              "str_configFolderTooltip",
+              //"You can back up your settings or migrate them to another machine by copying karabiner.json. "
+                //+ "There are also backups under the automatic_backups folder, so you can restore a previous state by overwriting karabiner.json with one of those backups.",
               systemImage: InfoBorder.icon
             )
             .modifier(InfoBorder())
@@ -65,8 +67,9 @@ struct MiscView: View {
               })
 
             Label(
-              "You can use Karabiner-Elements even before login by setting the system default configuration. "
-                + "(This operation requires the administrator privilege.)",
+              "str_systemDefaultConfigurationTooltip",
+              //"You can use Karabiner-Elements even before login by setting the system default configuration. "
+                //+ "(This operation requires the administrator privilege.)",
               systemImage: InfoBorder.icon
             )
             .modifier(InfoBorder())

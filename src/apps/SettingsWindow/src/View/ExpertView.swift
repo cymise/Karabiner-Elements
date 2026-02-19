@@ -14,11 +14,12 @@ struct ExpertView: View {
             .switchToggleStyle()
 
             Label(
-              "Unsafe configuration disables the foolproof feature on the configuration UI.\n"
-                + "You should not enable unsafe configuration unless you are ready to stop Karabiner-Elements from remote machine. (e.g., using Screen Sharing)\n"
-                + "\n" + "Unsafe configuration allows the following items:\n"
-                + "- Allow you to enable Apple pointing devices in the Devices tab.\n"
-                + "- Allow you to change left-click in Simple Modifications tab.",
+              "str_expertModeTooltip",
+              //"Unsafe configuration disables the foolproof feature on the configuration UI.\n"
+                //+ "You should not enable unsafe configuration unless you are ready to stop Karabiner-Elements from remote machine. (e.g., using Screen Sharing)\n"
+                //+ "\n" + "Unsafe configuration allows the following items:\n"
+                //+ "- Allow you to enable Apple pointing devices in the Devices tab.\n"
+                //+ "- Allow you to change left-click in Simple Modifications tab.",
               systemImage: WarningBorder.icon
             )
             .modifier(WarningBorder())
@@ -36,10 +37,11 @@ struct ExpertView: View {
               .switchToggleStyle()
 
               Label(
-                "If this setting is enabled, the following events will be ignored:\n"
-                  + "- Nintendo's Pro Controller (USB connected):\n"
-                  + "    - Buttons since on/off events are continuously sent at high frequency even when nothing is pressed.\n"
-                  + "    - Sticks since tilt events in random directions are continuously sent even when the stick is not moved at all.",
+                "str_specificDevicesFilterTooltip",
+                //"If this setting is enabled, the following events will be ignored:\n"
+                  //+ "- Nintendo's Pro Controller (USB connected):\n"
+                  //+ "    - Buttons since on/off events are continuously sent at high frequency even when nothing is pressed.\n"
+                  //+ "    - Sticks since tilt events in random directions are continuously sent even when the stick is not moved at all.",
                 systemImage: InfoBorder.icon
               )
               .modifier(InfoBorder())
@@ -76,8 +78,8 @@ struct ExpertView: View {
             }
 
             Label(
-              "Setting insufficient delay (e.g., 0) will result in a device becoming unusable after Karabiner-Elements is quit.\n"
-                + "(This is a macOS problem and can be solved by unplugging the device and plugging it again.)",
+              "str_grabdeviceinsufficientdelaytooltip",//"Setting insufficient delay (e.g., 0) will result in a device becoming unusable after Karabiner-Elements is quit.\n"
+                //+ "(This is a macOS problem and can be solved by unplugging the device and plugging it again.)",
               systemImage: WarningBorder.icon
             )
             .modifier(WarningBorder())
